@@ -1,25 +1,24 @@
 let modInfo = {
-	name: "从夸克到宇宙",
-	author: "galaxy",
+	name: "from quark to universe",
+	author: "galaxy and fanyi.baidu.com",
 	pointsName: "stage",
 	modFiles: ["layers.js", "tree.js"],
 
 	discordName: "",
 	discordLink: "",
 	initialStartPoints: new Decimal (0), // Used for hard resets and new players
-	offlineLimit: 1,  // In hours
+	offlineLimit: 0,  // In hours
 }
 
 // Set your version in num and name
 let VERSION = {
 	num: "0.0",
-	name: "the sb plan",
+	name: "quark",
 }
 
 let changelog = `<h1>Changelog:</h1><br>
 	<h3>v0.0</h3><br>
-		- Added things.<br>
-		- Added stuff.`
+		- Added nothing.<br>`
 
 let winText = `Congratulations! You have reached the end and beaten this game, but for now...`
 
@@ -49,12 +48,13 @@ function addedPlayerData() { return {
 }}
 
 // Display extra things at the top of the page
-var displayThings = [
+var displayThings = ["<br>",
+	"endgame: buy upgrade \"A small boost\""
 ]
 
 // Determines when the game "ends"
 function isEndgame() {
-	return false
+	return hasUpgrade("quark",31)
 }
 
 
