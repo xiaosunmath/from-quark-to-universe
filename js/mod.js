@@ -48,7 +48,9 @@ function addedPlayerData() { return {
 }}
 
 // Display extra things at the top of the page
-var displayThings = ["<br>",
+var displayThings = [
+	"You are in rank idk",
+	"<br>",
 	"endgame: buy upgrade \"A small boost\""
 ]
 
